@@ -1,6 +1,6 @@
 # Bash is all you need
 
-The most basic AI agent in a tiny bash file (< 500 loc) with single tool: bash.
+The most basic AI agent in a tiny bash file (< 500 loc) with a single tool: bash.
 
 ## DANGER
 
@@ -24,17 +24,33 @@ The agent sends your task to the OpenAI Responses API, lets the model decide whi
 
 ## Usage
 
+### With curl
+
+```
+export OPENAI_API_KEY="your_api_key"
+
+curl https://mistake.sh | bash -s -- "create nodejs project"
+```
+
+### Locally
+
+Install
+
+```bash
+curl https://raw.githubusercontent.com/mpowaga/no-mistake/refs/heads/main/no-mistake.sh -o no-mistake.sh
+```
+
 ```bash
 chmod +x mistake.sh
 export OPENAI_API_KEY="your_api_key"
 
-./mistake.sh "summarize this repo"
+./no-mistake.sh "summarize this repo"
 ```
 
 You can also pipe input:
 
 ```bash
-./mistake.sh < TASK.md
+./no-mistake.sh < TASK.md
 ```
 
 ## Options
