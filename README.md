@@ -1,6 +1,6 @@
 # Bash is all you need
 
-The most basic AI agent in a tiny bash file (< 500 loc) with a single tool: bash.
+The most basic AI agent in a tiny bash file (< 500 loc) with only one tool: bash.
 
 ## DANGER
 
